@@ -1,7 +1,6 @@
 #idea
 .idea
 *.iml
-/src
 /out
 
 # Compiled class file
