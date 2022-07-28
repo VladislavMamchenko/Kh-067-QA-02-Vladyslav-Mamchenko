@@ -3,9 +3,9 @@ import java.util.Scanner;
 public class CalculatorClass {
     public static void main(String[] args) {
         try {
-            double num1;
-            double num2;
-            double x;
+            double answerNum1
+            double answerNum2;
+            double result;
             String operation;
 
             Scanner sc = new Scanner(System.in);
@@ -17,7 +17,6 @@ public class CalculatorClass {
             operation = sc2.nextLine();
             System.out.println("Type second value");
             num2 = sc.nextDouble();
-
 
             switch (operation) {
                 case "+":
@@ -47,8 +46,6 @@ public class CalculatorClass {
         }
         catch (Exception e) {
             System.out.println("Input is wrong!");
-
         }
-
     }
 }
