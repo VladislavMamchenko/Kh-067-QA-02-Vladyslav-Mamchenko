@@ -12,32 +12,32 @@ public class CalculatorClass {
             Scanner sc2 = new Scanner(System.in);
 
             System.out.println("Type first value");
-            num1 = sc.nextDouble();
+            answerNum1 = sc.nextDouble();
             System.out.println("Type operation");
             operation = sc2.nextLine();
             System.out.println("Type second value");
-            num2 = sc.nextDouble();
+            answerNum2 = sc.nextDouble();
 
             switch (operation) {
                 case "+":
-                    x = num1 + num2;
-                    System.out.println(x);
+                    result = answerNum1 + answerNum2;
+                    System.out.println(result);
                     break;
                 case "-":
-                    x = num1 - num2;
-                    System.out.println(x);
+                    result = answerNum1 - answerNum2;
+                    System.out.println(result);
                     break;
                 case "*":
-                    x = num1 * num2;
-                    System.out.println(x);
+                    result = answerNum1 * answerNum2;
+                    System.out.println(result);
                     break;
                 case "/":
-                    x = num1 / num2;
-                    System.out.println(x);
+                    result = answerNum1 / answerNum2;
+                    System.out.println(result);
                     break;
                 case "%":
-                    x = num1 % num2;
-                    System.out.println(x);
+                    result = answerNum1 % answerNum2;
+                    System.out.println(result);
                     break;
                 default:
                     System.out.println("Calculator does not support this operation");
