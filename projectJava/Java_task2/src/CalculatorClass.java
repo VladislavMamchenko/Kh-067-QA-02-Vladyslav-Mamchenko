@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class CalculatorClass {
     public static void main(String[] args) {
         try {
-            double answerNum1
+            double answerNum1;
             double answerNum2;
             double result;
             String operation;
