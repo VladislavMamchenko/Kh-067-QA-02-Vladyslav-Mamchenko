@@ -5,45 +5,45 @@ public class CalculatorClass {
         boolean loopvalue = true;
             do {
                 try {
-                    double num1;
-                    double num2;
-                    double x;
+                    double answerNum1;
+                    double answerNum2;
+                    double result;
                     String operation;
 
                     Scanner sc = new Scanner(System.in);
                     Scanner sc2 = new Scanner(System.in);
 
                     System.out.println("Type first value");
-                    num1 = sc.nextDouble();
+                    answerNum1 = sc.nextDouble();
                     System.out.println("Type operation");
                     operation = sc2.nextLine();
                     System.out.println("Type second value");
-                    num2 = sc.nextDouble();
+                    answerNum2 = sc.nextDouble();
 
 
                     switch (operation) {
                         case "+":
-                            x = num1 + num2;
-                            System.out.println("Result: " + x + "\n");
+                            result = answerNum1 + answerNum2;
+                            System.out.println("Result: " + result + "\n");
                             break;
                         case "-":
-                            x = num1 - num2;
-                            System.out.println("Result: " + x + "\n");
+                            result = answerNum1 - answerNum2;
+                            System.out.println("Result: " + result + "\n");
                             break;
                         case "*":
-                            x = num1 * num2;
-                            System.out.println("Result: " + x + "\n");
+                            result = answerNum1 * answerNum2;
+                            System.out.println("Result: " + result + "\n");
                             break;
                         case "/":
-                            x = num1 / num2;
-                            if (x == Double.POSITIVE_INFINITY ||
-                                    x == Double.NEGATIVE_INFINITY)
+                            result = answerNum1 / answerNum2;
+                            if (result == Double.POSITIVE_INFINITY ||
+                                    result == Double.NEGATIVE_INFINITY)
                                 throw new ArithmeticException();
-                            System.out.println("Result: " + x + "\n");
+                            System.out.println("Result: " + result + "\n");
                             break;
                         case "%":
-                            x = num1 % num2;
-                            System.out.println("Result: " + x + "\n");
+                            result = answerNum1 % answerNum2;
+                            System.out.println("Result: " + result + "\n");
                             break;
                         default:
                             System.out.println("Calculator does not support this operation \n");
